@@ -1,7 +1,6 @@
 package media_unknown
 
 import (
-	"github.com/smartmediafiles/media/media/maps"
 	"github.com/smartmediafiles/media/media/types"
 )
 
@@ -10,7 +9,7 @@ const (
 	Unknown types.FileType = ""
 )
 
-// UnknownFileTypesExtensions is a map of media.Unknown file types and their extensions.
-var UnknownFileTypesExtensions = maps.MapFileTypeExtensions{
-	Unknown: {".*"},
+// UnknownFileTypes is a list of supported media.Unknown file types.
+var UnknownFileTypes = []types.FileType{
+	Unknown,
 }
